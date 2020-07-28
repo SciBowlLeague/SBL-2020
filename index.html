@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+          name='viewport'/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+          media="screen,projection">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>SBL Summer 2020</title>
+</head>
+<body>
+
+<div class="navbar-fixed" id="home">
+    <nav class="white" style="background-color: #004990 !important;;">
+        <div class="container">
+            <div class="" style="height: 45px;">
+                <a href="#" class="logo">SBL 2020</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                    <i class="material-icons" >menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li style="display: none;">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#faqs">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#sponsors">Sponsors</a>
+                    </li>
+                    <li>
+                        <a href="#staff">Staff</a>
+                    </li>
+                    <!--<li>
+                        <a href="#prize">prizes</a>
+                    </li>-->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<ul class="sidenav" id="mobile-nav">
+    <li style="display: none;">
+        <a href="#home">Home</a>
+    </li>
+    <li>
+        <a href="#about">About</a>
+    </li>
+    <li>
+        <a href="#faqs">FAQs</a>
+    </li>
+    <li>
+        <a href="#sponsors">Sponsors</a>
+    </li>
+    <li>
+        <a href="#staff">Staff</a>
+    </li>
+    <!--<li>
+        <a href="#prize">prizes</a>
+    </li>-->
+</ul>
+
+
+<div class="row flex" style="color: #eeeeee;">
+    <div class="col s12 m6">
+        <div class="logo-div image-ripple" id="theFixed">
+            <img class="logo-img" src="static/images/sbl-logo-1.png" alt="">
+        </div>
+
+    </div>
+    <div class="col s12 m6" id="div2">
+        <div style="width: 100%;" class="center-text-div">
+            <div class="row">
+                <div class="col s12">
+                    <div class="big-title-class">Science Bowl League</div>
+                </div>
+
+                <!-- Count Down -->
+                <!-- todo update date -->
+                <div id="clockdiv" class="col s12 l9">
+                    <div>
+                        <span class="days"></span>
+                        <div class="smalltext">Days</div>
+                    </div>
+                    <div>
+                        <span class="hours"></span>
+                        <div class="smalltext">Hours</div>
+                    </div>
+                    <div>
+                        <span class="minutes"></span>
+                        <div class="smalltext">Minutes</div>
+                    </div>
+                    <div>
+                        <span class="seconds"></span>
+                        <div class="smalltext">Seconds</div>
+                    </div>
+                </div>
+
+                <div id="cover-buttons" class="col s12 l9 button-container" style="text-align: center;">
+
+                    <a href="https://discord.gg/7rBDTAC" id="discord-join">
+                        <button style="margin: 0 auto !important; min-width: 250px; letter-spacing: 1.5px; word-spacing: 5px;"
+                                class="button -regular center">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                 width="24" height="24"
+                                 viewBox="0 0 172 172"
+                                 style="margin-right:10px">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#ffffff">
+                                    <path d="M65.0375,24.08c0,0 -21.90312,1.505 -36.2275,13.0075c-0.06719,0.02688 -0.14781,0.06719 -0.215,0.1075c-2.48594,2.29781 -4.35375,5.85875 -6.665,10.965c-2.31125,5.10625 -4.75687,11.67719 -6.9875,19.0275c-4.44781,14.71406 -8.0625,32.77406 -8.0625,49.7725c-0.01344,0.60469 0.13438,1.19594 0.43,1.72c5.02563,8.82844 14.27063,14.16313 22.8975,17.5225c8.62688,3.35938 16.59531,4.70313 20.64,4.8375c1.14219,0.04031 2.23063,-0.48375 2.9025,-1.3975l8.385,-11.61c6.75906,1.59906 14.68719,2.6875 23.865,2.6875c9.17781,0 17.10594,-1.08844 23.865,-2.6875l8.385,11.61c0.67188,0.91375 1.76031,1.43781 2.9025,1.3975c4.04469,-0.13437 12.01313,-1.47812 20.64,-4.8375c8.62688,-3.35937 17.87188,-8.69406 22.8975,-17.5225c0.29563,-0.52406 0.44344,-1.11531 0.43,-1.72c0,-16.99844 -3.61469,-35.05844 -8.0625,-49.7725c-2.23062,-7.35031 -4.67625,-13.92125 -6.9875,-19.0275c-2.31125,-5.10625 -4.17906,-8.66719 -6.665,-10.965c-0.06719,-0.04031 -0.14781,-0.08062 -0.215,-0.1075c-14.32437,-11.5025 -36.2275,-13.0075 -36.2275,-13.0075c-0.25531,-0.02687 -0.49719,-0.02687 -0.7525,0c-1.19594,0.16125 -2.20375,0.94063 -2.6875,2.0425c0,0 -1.16906,2.56656 -1.935,6.235c-6.70531,-1.075 -12.34906,-1.3975 -15.5875,-1.3975c-3.23844,0 -8.88219,0.3225 -15.5875,1.3975c-0.76594,-3.66844 -1.935,-6.235 -1.935,-6.235c-0.59125,-1.34375 -1.97531,-2.16344 -3.44,-2.0425zM62.8875,31.4975c0.25531,0.69875 0.43,1.35719 0.645,2.15c-7.75344,1.80063 -16.24594,4.74344 -24.1875,9.675c-1.24969,0.52406 -2.06937,1.73344 -2.10969,3.09063c-0.02688,1.34375 0.73906,2.59344 1.94844,3.18469c1.22281,0.57781 2.67406,0.40312 3.70875,-0.47031c15.93688,-9.87656 36.21406,-11.2875 43.1075,-11.2875c6.89344,0 27.17063,1.41094 43.1075,11.2875c1.03469,0.87344 2.48594,1.04813 3.70875,0.47031c1.20938,-0.59125 1.97531,-1.84094 1.94844,-3.18469c-0.04031,-1.35719 -0.86,-2.56656 -2.10969,-3.09063c-7.94156,-4.93156 -16.43406,-7.87437 -24.1875,-9.675c0.215,-0.79281 0.38969,-1.45125 0.645,-2.15c3.92375,0.48375 19.17531,2.53969 29.5625,10.75c0.67188,0.61813 3.01,4.05813 5.16,8.815c2.15,4.75688 4.4075,10.95156 6.5575,18.06c4.1925,13.8675 7.57875,30.97344 7.74,46.655c-3.91031,6.32906 -11.24719,11.03219 -18.8125,13.975c-6.88,2.67406 -13.30312,3.87 -16.6625,4.1925l-5.805,-7.8475c2.95625,-0.95406 5.61688,-1.98875 7.955,-3.01c8.68063,-3.81625 13.33,-7.8475 13.33,-7.8475c1.42438,-1.27656 1.54531,-3.46687 0.26875,-4.89125c-1.27656,-1.42437 -3.46687,-1.54531 -4.89125,-0.26875c0,0 -3.60125,3.29219 -11.5025,6.7725c-2.9025,1.27656 -6.42312,2.53969 -10.4275,3.655c-0.92719,-0.1075 -1.85437,0.16125 -2.58,0.7525c-6.40969,1.55875 -14.02875,2.58 -23.005,2.58c-9.04344,0 -16.67594,-1.11531 -23.1125,-2.6875c-0.72562,-0.48375 -1.6125,-0.68531 -2.4725,-0.5375c-4.01781,-1.11531 -7.51156,-2.48594 -10.4275,-3.7625c-7.90125,-3.48031 -11.5025,-6.7725 -11.5025,-6.7725c-0.77937,-0.72562 -1.85437,-1.03469 -2.9025,-0.86c-1.33031,0.20156 -2.43219,1.15563 -2.795,2.45906c-0.37625,1.29 0.05375,2.6875 1.075,3.56094c0,0 4.64938,4.03125 13.33,7.8475c2.33813,1.02125 4.99875,2.05594 7.955,3.01l-5.805,7.8475c-3.35937,-0.3225 -9.7825,-1.51844 -16.6625,-4.1925c-7.56531,-2.94281 -14.90219,-7.64594 -18.8125,-13.975c0.16125,-15.68156 3.5475,-32.7875 7.74,-46.655c2.15,-7.10844 4.4075,-13.30312 6.5575,-18.06c2.15,-4.75687 4.48813,-8.19687 5.16,-8.815c10.38719,-8.21031 25.63875,-10.26625 29.5625,-10.75zM63.64,72.24c-8.77469,0 -15.48,7.96844 -15.48,17.2c0,9.23156 6.70531,17.2 15.48,17.2c8.77469,0 15.48,-7.96844 15.48,-17.2c0,-9.23156 -6.70531,-17.2 -15.48,-17.2zM108.36,72.24c-8.77469,0 -15.48,7.96844 -15.48,17.2c0,9.23156 6.70531,17.2 15.48,17.2c8.77469,0 15.48,-7.96844 15.48,-17.2c0,-9.23156 -6.70531,-17.2 -15.48,-17.2zM63.64,79.12c4.52844,0 8.6,4.35375 8.6,10.32c0,5.96625 -4.07156,10.32 -8.6,10.32c-4.52844,0 -8.6,-4.35375 -8.6,-10.32c0,-5.96625 4.07156,-10.32 8.6,-10.32zM108.36,79.12c4.52844,0 8.6,4.35375 8.6,10.32c0,5.96625 -4.07156,10.32 -8.6,10.32c-4.52844,0 -8.6,-4.35375 -8.6,-10.32c0,-5.96625 4.07156,-10.32 8.6,-10.32z"></path>
+                                </g>
+                                </g>
+                            </svg>
+                            Join Primary Science Bowl Server
+                        </button>
+                    </a>
+
+                    <!-- TODO Registration link  -->
+                    <!--<a href="" id="discord-join">
+                        <button style="margin: 0 auto !important; min-width: 250px; letter-spacing: 1.5px; word-spacing: 5px;"
+                                class="button -regular center">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                 width="24" height="24"
+                                 viewBox="0 0 172 172"
+                                 style="margin-right:10px">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#ffffff">
+                                        <path d="M65.0375,24.08c0,0 -21.90312,1.505 -36.2275,13.0075c-0.06719,0.02688 -0.14781,0.06719 -0.215,0.1075c-2.48594,2.29781 -4.35375,5.85875 -6.665,10.965c-2.31125,5.10625 -4.75687,11.67719 -6.9875,19.0275c-4.44781,14.71406 -8.0625,32.77406 -8.0625,49.7725c-0.01344,0.60469 0.13438,1.19594 0.43,1.72c5.02563,8.82844 14.27063,14.16313 22.8975,17.5225c8.62688,3.35938 16.59531,4.70313 20.64,4.8375c1.14219,0.04031 2.23063,-0.48375 2.9025,-1.3975l8.385,-11.61c6.75906,1.59906 14.68719,2.6875 23.865,2.6875c9.17781,0 17.10594,-1.08844 23.865,-2.6875l8.385,11.61c0.67188,0.91375 1.76031,1.43781 2.9025,1.3975c4.04469,-0.13437 12.01313,-1.47812 20.64,-4.8375c8.62688,-3.35937 17.87188,-8.69406 22.8975,-17.5225c0.29563,-0.52406 0.44344,-1.11531 0.43,-1.72c0,-16.99844 -3.61469,-35.05844 -8.0625,-49.7725c-2.23062,-7.35031 -4.67625,-13.92125 -6.9875,-19.0275c-2.31125,-5.10625 -4.17906,-8.66719 -6.665,-10.965c-0.06719,-0.04031 -0.14781,-0.08062 -0.215,-0.1075c-14.32437,-11.5025 -36.2275,-13.0075 -36.2275,-13.0075c-0.25531,-0.02687 -0.49719,-0.02687 -0.7525,0c-1.19594,0.16125 -2.20375,0.94063 -2.6875,2.0425c0,0 -1.16906,2.56656 -1.935,6.235c-6.70531,-1.075 -12.34906,-1.3975 -15.5875,-1.3975c-3.23844,0 -8.88219,0.3225 -15.5875,1.3975c-0.76594,-3.66844 -1.935,-6.235 -1.935,-6.235c-0.59125,-1.34375 -1.97531,-2.16344 -3.44,-2.0425zM62.8875,31.4975c0.25531,0.69875 0.43,1.35719 0.645,2.15c-7.75344,1.80063 -16.24594,4.74344 -24.1875,9.675c-1.24969,0.52406 -2.06937,1.73344 -2.10969,3.09063c-0.02688,1.34375 0.73906,2.59344 1.94844,3.18469c1.22281,0.57781 2.67406,0.40312 3.70875,-0.47031c15.93688,-9.87656 36.21406,-11.2875 43.1075,-11.2875c6.89344,0 27.17063,1.41094 43.1075,11.2875c1.03469,0.87344 2.48594,1.04813 3.70875,0.47031c1.20938,-0.59125 1.97531,-1.84094 1.94844,-3.18469c-0.04031,-1.35719 -0.86,-2.56656 -2.10969,-3.09063c-7.94156,-4.93156 -16.43406,-7.87437 -24.1875,-9.675c0.215,-0.79281 0.38969,-1.45125 0.645,-2.15c3.92375,0.48375 19.17531,2.53969 29.5625,10.75c0.67188,0.61813 3.01,4.05813 5.16,8.815c2.15,4.75688 4.4075,10.95156 6.5575,18.06c4.1925,13.8675 7.57875,30.97344 7.74,46.655c-3.91031,6.32906 -11.24719,11.03219 -18.8125,13.975c-6.88,2.67406 -13.30312,3.87 -16.6625,4.1925l-5.805,-7.8475c2.95625,-0.95406 5.61688,-1.98875 7.955,-3.01c8.68063,-3.81625 13.33,-7.8475 13.33,-7.8475c1.42438,-1.27656 1.54531,-3.46687 0.26875,-4.89125c-1.27656,-1.42437 -3.46687,-1.54531 -4.89125,-0.26875c0,0 -3.60125,3.29219 -11.5025,6.7725c-2.9025,1.27656 -6.42312,2.53969 -10.4275,3.655c-0.92719,-0.1075 -1.85437,0.16125 -2.58,0.7525c-6.40969,1.55875 -14.02875,2.58 -23.005,2.58c-9.04344,0 -16.67594,-1.11531 -23.1125,-2.6875c-0.72562,-0.48375 -1.6125,-0.68531 -2.4725,-0.5375c-4.01781,-1.11531 -7.51156,-2.48594 -10.4275,-3.7625c-7.90125,-3.48031 -11.5025,-6.7725 -11.5025,-6.7725c-0.77937,-0.72562 -1.85437,-1.03469 -2.9025,-0.86c-1.33031,0.20156 -2.43219,1.15563 -2.795,2.45906c-0.37625,1.29 0.05375,2.6875 1.075,3.56094c0,0 4.64938,4.03125 13.33,7.8475c2.33813,1.02125 4.99875,2.05594 7.955,3.01l-5.805,7.8475c-3.35937,-0.3225 -9.7825,-1.51844 -16.6625,-4.1925c-7.56531,-2.94281 -14.90219,-7.64594 -18.8125,-13.975c0.16125,-15.68156 3.5475,-32.7875 7.74,-46.655c2.15,-7.10844 4.4075,-13.30312 6.5575,-18.06c2.15,-4.75687 4.48813,-8.19687 5.16,-8.815c10.38719,-8.21031 25.63875,-10.26625 29.5625,-10.75zM63.64,72.24c-8.77469,0 -15.48,7.96844 -15.48,17.2c0,9.23156 6.70531,17.2 15.48,17.2c8.77469,0 15.48,-7.96844 15.48,-17.2c0,-9.23156 -6.70531,-17.2 -15.48,-17.2zM108.36,72.24c-8.77469,0 -15.48,7.96844 -15.48,17.2c0,9.23156 6.70531,17.2 15.48,17.2c8.77469,0 15.48,-7.96844 15.48,-17.2c0,-9.23156 -6.70531,-17.2 -15.48,-17.2zM63.64,79.12c4.52844,0 8.6,4.35375 8.6,10.32c0,5.96625 -4.07156,10.32 -8.6,10.32c-4.52844,0 -8.6,-4.35375 -8.6,-10.32c0,-5.96625 4.07156,-10.32 8.6,-10.32zM108.36,79.12c4.52844,0 8.6,4.35375 8.6,10.32c0,5.96625 -4.07156,10.32 -8.6,10.32c-4.52844,0 -8.6,-4.35375 -8.6,-10.32c0,-5.96625 4.07156,-10.32 8.6,-10.32z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                            Join Competition Discord
+                        </button>
+                    </a>-->
+
+                </div>
+                <div class="event-date col s12 l9">
+                    <p>Registration opens <span class="sci-green">Aug. 17ᵗʰ</span>.</p>
+                </div>
+                <div class="event-date col s12 l9">
+                    <p>Runs from <span class="sci-blue">Sep. 21st</span> - <span class="sci-blue"> Nov. 7</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section about-text" style="width: 100%;">
+            <h1 id="about" class="scrollspy about-text" style="padding: 10% 2%;">About</h1>
+            <div style="padding: 2%;font-size: 1.6rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Elit
+                scelerisque mauris pellentesque pulvinar pellentesque. Sed cras ornare arcu dui vivamus. Pellentesque
+                dignissim enim sit amet. Volutpat lacus laoreet non curabitur. Iaculis urna id volutpat lacus laoreet
+                non curabitur gravida arcu. Ultricies mi eget mauris pharetra et. Pellentesque elit eget gravida cum. Id
+                ornare arcu odio ut sem nulla.
+
+                <br><br>
+
+                Feugiat vivamus at augue eget arcu dictum varius duis. Adipiscing commodo elit at imperdiet dui
+                accumsan. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Ac feugiat sed lectus
+                vestibulum mattis ullamcorper velit sed. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis.
+                Arcu cursus euismod quis viverra. Viverra suspendisse potenti nullam ac tortor vitae purus. Volutpat
+                lacus laoreet non curabitur gravida arcu ac tortor dignissim. Id semper risus in hendrerit. Volutpat
+                diam ut venenatis tellus.
+
+            </div>
+        </div>
+
+        <!-- TODO  add?-->
+        <!--<div class="section about-text" style="width: 100%; >
+            <h1 id="prize" class="scrollspy about-text" style="padding: 10% 2%;">Prizes</h1>
+            <div class="row" style="font-size: 0.75em;">
+
+            </div>
+        </div>-->
+
+
+        <div class="section about-text" style="margin-top: 45%; margin-bottom: 15%;">
+            <h1 id="faqs" class="scrollspy faq-text"
+                style="padding-top: 10%; padding-bottom: 2%; padding-left: 2%; padding-right: 2%;">FAQs</h1>
+            <div style="padding: 2%;font-size: 1.6rem;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris rhoncus lacus pharetra leo faucibus, eu viverra enim tristique.
+                Proin placerat felis et tellus elementum euismod.
+                Duis dignissim nisi vitae velit blandit, pharetra gravida diam tristique.
+                Sed non diam ac ligula ornare laoreet.<br><br>
+
+                Proin nec odio a metus tincidunt laoreet id ut mi.
+                Vestibulum tincidunt enim sit amet enim sollicitudin fringilla.
+                Praesent ut magna sed augue sagittis cursus.<br><br>
+
+                Aliquam quis urna sed tortor bibendum interdum.
+                Nulla tempus velit eget est facilisis sagittis eu quis dui.
+                Aenean pharetra mi at bibendum sagittis.
+                Nulla sed libero ut mi convallis molestie at at turpis.<br><br>
+
+                Maecenas et turpis tristique, cursus sapien ultrices, eleifend mi.
+                Fusce dictum nisl venenatis lacus viverra, nec lacinia nibh vulputate.<br><br>
+
+                Integer et tellus sed magna condimentum faucibus.
+                Vivamus sit amet augue ut mi tempor pulvina<br><br>
+
+            </div>
+        </div>
+        <div id="anchor-point" style="height: 1px;"></div>
+    </div>
+</div>
+
+
+<div class="row">
+
+    <div class="col s12 m12 l12 sponsor-row">
+        <div id="sponsors" class="scrollspy" style="width: 100%;">
+
+            <div class="row">
+                <h1 style="padding: 2%;">Sponsors</h1>
+
+                <div style="font-size: 1.1rem;">
+                    <div class="centered" style=" color: #070707; max-width: 250px; margin: auto;">
+                        <a id="sponsor-btn" target="_blank" href="mailto:organizers@scibowlleague.com">
+                            <div class="button -regular2 center">Become a sponsor</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div style="font-size: 1.1rem; margin-top: 15px">
+                    <div class="centered" style=" color: #070707; max-width: 250px; margin: auto;">
+                        <a id="prospect-btn" target="_blank" href="">  <!--todo add-->
+                            <div class="button -regular2 center">Prospectus</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col s12">
+                    <h2 class="part-sponsor-text title-sponsor">Tier 1:</h2>
+
+                    <div class="col s10 offset-s1 m12">
+                        <a target="_blank" href="https://cloud.mehvix.com/">
+                            <img style="background: #2b2b2b; border-radius: 15px"
+                                 class="sponsor-logos"
+                                 src="https://cloud.mehvix.com/apps/theming/image/logo?useSvg=1&v=43"
+                                 alt="cloud.mehvix.com">
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="col s10 offset-s1  m12"><br>
+                    <h2 class="part-sponsor-text">Tier 2:</h2>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col s12 m12 l12" style="text-align: center; color: #eeeeee; margin-bottom: 5%;">
+    <div id="staff" class="scrollspy" style="margin-bottom: 2%;">
+        <h1 id="speaker-text" class="team-speaker-text">Staff</h1>
+    </div>
+    <div class="row justify-content-center text-center">
+        <div class="col-md-4 col-lg-8 animated bounceInLeft" id="animate2">
+            <div class="row">
+                <a target="_blank" href="">
+                    <div class="col s5 m2 l2 offset-l1 offset-m1 offset-s1 team-card-size bigger-card">
+                        <div class="card darken-1">
+                            <div class="card-image">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                            <span class="card-title names"><b>Constantine Kyprianou</b></span>
+                            <p class="designation">President</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a target="_blank" href="">
+                    <div class="col s5 m2 l2 team-card-size bigger-card">
+                        <div class="card darken-1">
+                            <div class="card-image">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                            <span class="card-title names"><b>Tiffany Zhou</b></span>
+                            <p class="designation">League Director</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a target="_blank"
+                   href="https://mehvix.com">
+                    <div class="col s5 m2 l2 offset-s1 offset-m1 team-card-size bigger-card">
+                        <div class="card darken-1">
+                            <div class="card-image">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                            <span class="card-title names"><b> Max Vogel </b></span>
+                            <p class="designation">Lead Web Developer, Sponsorship Director</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a target="_blank" href="">
+                    <div class="col s5 m2 l2 team-card-size bigger-card">
+                        <div class="card darken-1">
+                            <div class="card-image">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                            <span class="card-title names"><b>David Jiang</b></span>
+                            <p class="designation">Superintendent</p>  <!--hahaha-->
+                        </div>
+                    </div>
+                </a>
+
+                <a target="_blank" href="">
+                    <div class="col s5 m2 offset-s1 l2 team-card-size">
+                        <div class="card darken-1">
+                            <div class="card-image">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                            <span class="card-title names"><b>Ridings Bald</b></span>
+                            <p class="designation">Writer (USNCO Study Camp ’19 & ’20)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a target="_blank" href="">
+                    <div class="col s5 m2 l2 offset-m1 offset-l1 team-card-size">
+                        <div class="card darken-1">
+                            <div class="card-image">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                            <span class="card-title names"><b>Sean Fei</b></span>
+                            <p class="designation">Writer (USABO Study Camp ’20)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a target="_blank" href="">
+                    <div class="col s5 m2 l2 offset-s1 team-card-size bigger-card">
+                        <div class="card darken-1">
+                            <div class="card-image">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                            <span class="card-title names"><b>Yuchen Li</b></span>
+                            <p class="designation">Writer (IESO Gold Medalist ’19)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a target="_blank" href="">
+                    <div class="col s5 m2 l2 team-card-size bigger-card">
+                        <div class="card darken-1">
+                            <div class="card-image">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                            <span class="card-title names"><b>Derik Kauffman</b></span>
+                            <p class="designation">Writer (NSB National Champion ’17 & ’18)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a target="_blank" href="">
+                    <div class="col s5 m2 l2 team-card-size bigger-card">
+                        <div class="card darken-1">
+                            <div class="card-image">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                            <span class="card-title names"><b>Coby Tran</b></span>
+                            <p class="designation">Writer (USAMO '20)</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+    var deadline = new Date("aug 17, 2020, 00:00:00");
+    //Today's Data
+    var today = new Date();
+    var Difference_In_Time = deadline.getTime() - today.getTime();
+    var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+    let time_left = (Difference_In_Days * 24 * 60 * 60 * 1000 - (today.getHours() * 60 * 60 * 1000) - (today.getMinutes() * 60 * 1000) - (today.getSeconds() * 1000) - (today.getUTCMilliseconds()));
+
+
+    // Count Down
+    function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
+
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = new Date(Date.parse(new Date()) + time_left);
+    initializeClock('clockdiv', deadline);
+
+    // Sidenav
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+
+    // ScrollSpy
+    const ss = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(ss, {});
+
+    sponsor_id = document.getElementById('sponsor-text');
+    team_id = document.getElementById('team-text');
+
+    $(function () {
+        $('.-regular').hover(function () {
+            $('#codeit').css('color', '#d52d30');
+        }, function () {
+            // on mouseout, reset the background colour
+            $('#codeit').css('color', 'white');
+        });
+    });
+    $(function () {
+        $('#sponsor-btn').hover(function () {
+            $('#sponsor-text').css('color', '#d52d30');
+        }, function () {
+            // on mouseout, reset the background colour
+            $('#sponsor-text').css('color', '#070707');
+        });
+    });
+    $(function () {
+        $('#prospect-btn').hover(function () {
+            $('#sponsor-text').css('color', '#d52d30');
+        }, function () {
+            // on mouseout, reset the background colour
+            $('#sponsor-text').css('color', '#070707');
+        });
+    });
+    $(function () {
+        $('#team-btn').hover(function () {
+            $('#team-text').css('color', '#d52d30');
+        }, function () {
+            // on mouseout, reset the background colour
+            $('#team-text').css('color', 'white');
+        });
+    });
+
+    if ($(window).width() > 600) {
+        const scrollHandler = () => {
+            const scroll_top = $(this).scrollTop(); // get scroll position top
+            const height_element_parent = $("#theFixed").parent().outerHeight(); //get height of parent element
+            const height_element = $("#theFixed").height() + 150; //get height of element
+            const position_fixed_max = height_element_parent - height_element; // get the maximum position of the element
+            const position_fixed = scroll_top < 150 ? 150 - scroll_top : position_fixed_max > scroll_top ? 100 : position_fixed_max - scroll_top;
+            $("#theFixed").delay(100).css("top", position_fixed);
+        };
+        $(window).scroll(scrollHandler);
+        scrollHandler();
+    }
+
+
+</script>
+
+</body>
+
+</html>

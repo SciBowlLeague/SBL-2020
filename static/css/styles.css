@@ -1,0 +1,764 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.join-buttons {
+    margin-left: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #171717;
+    overflow-x: hidden !important;
+    font-family: 'Lato', sans-serif;
+}
+
+ul {
+    height: 45px;
+}
+
+ul li {
+    height: 45px;
+}
+
+ul li a {
+    height: fit-content;
+    color: #efefef !important;
+    font-size: 1.25em;
+}
+
+div.container {
+    height: 45px;
+    width: 100%;
+    margin-top: -3px;
+}
+
+nav.white {
+    height: 55px;
+}
+
+.card-image {
+    width: 94%;
+    margin: auto;
+    padding: 5px 0;
+}
+
+/* Transition effects */
+.button {
+    -webkit-transition: all 1s ease !important;
+}
+
+#sponsor-text, #team-text {
+    -webkit-transition: all 1s ease !important;
+}
+
+.prizes {
+    -webkit-transition: all 1s ease !important;
+}
+
+.prize {
+    -webkit-transition: all 1s ease !important;
+}
+
+.prize1:hover,
+.prize2:hover,
+.prize3:hover {
+    color: #d52d30;
+}
+
+.prize1,
+.prize2,
+.prize3 {
+    -webkit-transition: all 1s ease !important;
+}
+
+.amount1,
+.amount2,
+.amount3 {
+    -webkit-transition: all 1s ease !important;
+}
+
+.button-container {
+    display: flex;
+    margin: 5px auto;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.button {
+    display: flex;
+    overflow: hidden;
+
+    /* margin: 4px 10px; */
+    padding: 8px 20px;
+
+    cursor: pointer;
+    user-select: none;
+    transition: all 150ms linear;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    text-transform: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 180px;
+
+    box-shadow: 2px 5px 10px var(--color-smoke);
+}
+
+.button.-regular {
+    color: white;
+    background: none;
+    border: solid white 2px;
+}
+
+.button.-regular2 {
+    color: black;
+    background: none;
+    border: solid black 2px;
+}
+
+/*.div-outer {
+    position: relative;
+    background: pink;
+    height: 800px;
+    margin-bottom: 800px;
+}
+
+.div-inner {
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    width: 10%;
+    height: calc(100vh - 100px);
+    background: gold;
+}
+
+.bottom-div {
+    position: absolute;
+    bottom: 0;
+}*/
+
+.button.-regular:hover {
+    color: #d52d30;
+    background: none;
+    border: solid #d52d30 2px;
+}
+
+.button.-regular2:hover {
+    color: #d52d30;
+    background: none;
+    border: solid #d52d30 2px;
+}
+
+.pulsate {
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.5;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 255 255 255 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 255 255 255 45px rgba(0, 0, 0, 0);
+    }
+}
+
+.image-ripple {
+    animation: shadow-pulse 1s infinite;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.names {
+    font-weight: 800;
+    font-size: 1.15em;
+    color: black;
+}
+
+.gist-list li {
+    list-style-Type: none;
+    padding: 0 0 4px 23px;
+}
+
+#theFixed {
+    transition: 1s ease;
+}
+
+.team-card-size {
+    background-color: white;
+    min-height: 315px !important;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.names {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.designation {
+    color: #070707;
+    font-size: 0.9em;
+}
+
+@media only screen and (max-width: 600px) {
+    .team-card-size {
+        min-height: 220px !important;
+        margin-right: 10px !important;
+        margin-bottom: 10px !important;
+        /* font-size: 0.75em; */
+    }
+
+    .smaller-card {
+        min-height: 195px !important;
+    }
+
+    .bigger-card {
+        min-height: 235px !important;
+    }
+
+    .names {
+        font-size: 0.75em;
+    }
+
+    .designation {
+        font-size: 0.75em;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+}
+
+.logo {
+    color: #eeeeee;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 2%;
+}
+
+.grid-child-1 {
+}
+
+.logo-div {
+    width: 47.5%;
+    margin: auto;
+    /* position: fixed; */
+    /* height: 100%; */
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
+}
+
+#theFixed {
+    position: fixed;
+}
+
+#discord-join {
+    margin-left: 2%;
+}
+
+.logo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: 27.5%;
+    margin-top: 20%;
+    margin-bottom: 26%;
+    width: 47.5%
+}
+
+.event-date {
+    margin: 10px 20px 10px 20px;
+    /**/
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.sci-green {
+    color: #0f6636;
+}
+
+.sci-blue {
+    color: #004990;
+}
+
+.sidenav{
+    background: #0e0e0e !important;
+}
+
+.big-title-class {
+    font-size: 5rem;
+    /**/
+}
+
+.grid-child-2 {
+    justify-content: space-around;
+}
+
+.center-text-div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35%;
+    text-align: left;
+}
+
+.about-text {
+    margin-top: 70%;
+    /* padding-bottom: 30%; */
+    padding-right: 17.5%;
+    text-align: justify;
+    margin-bottom: 10%;
+}
+
+.about-head {
+    text-align: left;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.grid-container-small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+}
+
+/* .grid-container-small-2 {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5%;
+} */
+
+.grid-child-3 {
+    margin-top: 40%;
+}
+
+.sponsor-row {
+    text-align: center;
+    color: #070707;
+    background-color: #eeeeee;
+    padding-bottom: 7.5%;
+}
+
+.sponsor-section {
+    margin-top: 60%;
+    /* padding-bottom: 30%; */
+    padding-right: 17.5%;
+    margin-bottom: 10%;
+    width: 100%;
+}
+
+
+.sponsor-text {
+    font-size: 4em;
+    /**/
+    color: #070707;
+    text-align: center;
+    /* padding-left: 5%; */
+
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.about-text {
+    font-size: 2em;
+    /**/
+    color: #eeeeee;
+    text-align: center;
+    /* padding-left: 5%; */
+
+    margin-top: 27.5%;
+    margin-bottom: 0;
+}
+
+.team-speaker-text {
+    margin: 20% auto 10% auto;
+}
+
+.team-speaker-buttons {
+    margin: 0 auto 5% auto;
+}
+
+.team-text {
+    margin: 0 auto 0 auto;
+}
+
+.team-text {
+    font-size: 2em;
+    color: #eeeeee;
+    text-align: center;
+    /* padding-left: 5%; */
+
+    margin-top: 17.5%;
+    margin-bottom: 0;
+}
+
+#cover-buttons {
+    justify-content: left;
+}
+
+.faq-text {
+    font-size: 2em;
+    color: #eeeeee;
+    text-align: center;
+    /* padding-left: 5%; */
+
+    margin-top: 27.5%;
+    margin-bottom: 0;
+}
+
+/* .title-sponsor {
+	margin-top: 5% !important;
+	padding-top: 2% !important;
+} */
+.title-sponsor {
+    margin-top: 2% !important;
+    padding-top: 1% !important;
+}
+
+.part-sponsor-text {
+    font-size: 1.8em;
+
+    color: #070707;
+    text-align: center;
+    /* padding-left: 5%; */
+
+    /* margin-top: 5%; */
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* Count Down */
+#clockdiv {
+    justify-content: left;
+    font-family: sans-serif;
+    color: #eeeeee;
+    display: inline-block;
+    font-weight: 100;
+    text-align: left;
+    font-size: 40px;
+}
+
+#clockdiv > div {
+    padding: 0px 10px 0px 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+#clockdiv div > span {
+    padding: 0px 10px 0px 10px;
+    display: inline-block;
+}
+
+#clockdiv .smalltext {
+    padding-top: 2px;
+    font-size: 16px;
+}
+
+.details {
+    margin-top: 30%;
+    /* padding-bottom: 30%; */
+    padding-right: 17.5%;
+    text-align: justify;
+}
+
+.team-speaker-text {
+    font-size: 2em;
+
+    color: #eeeeee;
+    text-align: center;
+    /* padding-left: 5%; */
+
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+
+@media screen and (min-height: 1200px) {
+    .logo-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35%;
+        width: 50%;
+    }
+}
+
+@media screen and (min-height: 1500px) {
+    .about-text {
+        margin-top: 90%;
+    }
+
+    .sponsor-section {
+        margin-top: 25%;
+    }
+}
+
+.inp-size {
+    border: white solid 2px !important;
+    height: 30px !important;
+}
+
+.inp-size-larger {
+    border: white solid 2px !important;
+    height: 34px;
+}
+
+@media screen and (max-width: 820px) {
+    nav {
+        position: relative;
+    }
+
+    .logo {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+
+    .grid-child-1 {
+    }
+
+    .logo-div {
+        position: relative;
+        width: 100%;
+        margin-left: 25%;
+        margin-bottom: 25px;
+    }
+
+    #theFixed {
+        position: relative;
+    }
+
+    #discord-join {
+        height: 43.2px;
+        margin-left: 1%;
+        margin-top: 10px;
+    }
+
+    #cover-buttons {
+        justify-content: center;
+    }
+
+    /* Count Down */
+    #clockdiv {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    #clockdiv > div {
+        padding: 0px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    #clockdiv div > span {
+        padding: 0px 5px 0px 5px;
+        display: inline-block;
+    }
+
+    #clockdiv .smalltext {
+        padding-top: 0px;
+        font-size: 16px;
+    }
+
+    .center-text-div {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+        /* text-align: left; */
+        text-align: center;
+    }
+
+    .grid-container-small {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .logo-img {
+        width: 90%;
+        margin-left: 2.5%;
+    }
+
+    .big-title-class {
+        font-size: 24px;
+    }
+
+    .event-date {
+        text-align: center;
+        margin: 10px 0px 0px 0px;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .about-text {
+        margin-top: 50%;
+        /* padding-bottom: 30%; */
+        padding-right: 5%;
+        padding-left: 5%;
+        text-align: center;
+    }
+
+    .about-head {
+        text-align: center;
+        margin-bottom: 10%;
+        padding-right: 7.5%;
+        padding-left: 5%;
+    }
+
+    .grid-container-small-2 {
+        text-align: center;
+        /* display: grid; */
+        /* grid-template-columns: 1fr; */
+        width: 100%;
+    }
+
+    .grid-container-small-2 div {
+        /* margin-bottom: 10%; */
+    }
+
+    .grid-child-3 {
+        margin-top: -40%;
+    }
+
+    .sponsor-section {
+        margin-bottom: 10%;
+        padding-right: 7.5%;
+        padding-left: 5%;
+    }
+
+    .sponsor-text {
+        font-size: 2em;
+
+        color: #eeeeee;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
+
+    .team-speaker-text {
+        margin: 50% auto 10% auto;
+    }
+
+    .team-container {
+        margin-top: 75%;
+    }
+
+    .team-text {
+        font-size: 2em;
+
+        color: #eeeeee;
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+
+    .title-sponsor {
+        padding-top: 17.5% !important;
+    }
+
+    .part-sponsor-text {
+        font-size: 1.5em;
+
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 1%;
+        font-weight: 500;
+        padding: 2%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+        color: #070707;
+    }
+
+    /* .part-sponsor-text {
+        font-size: 1.8em;
+
+        color: #070707;
+        text-align: center;
+        padding-left: 5%;
+
+        margin-top: 1%;
+        margin-bottom: 12%;
+    } */
+
+
+
+
+    .details {
+        margin-top: 10%;
+        /* padding-bottom: 30%; */
+        padding-right: 5%;
+        padding-left: 5%;
+        text-align: center;
+    }
+}
+
+.sponsor-logos {
+    width: 70%;
+    max-width: 400px;
+}
