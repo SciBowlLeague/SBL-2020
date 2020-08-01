@@ -186,34 +186,25 @@
         </div>-->
 
 
-        <div class="section about-text" style="margin-top: 45%; margin-bottom: 15%;">
-            <h1 id="faqs" class="scrollspy faq-text"
-                style="padding-top: 10%; padding-bottom: 2%; padding-left: 2%; padding-right: 2%;">FAQs</h1>
-            <div style="padding: 2%;font-size: 1.6rem;">
-                <!--todo do-->
-                We hope to provide quality rounds that mimic the Department of Energy’s style, and we will be adhering
-                to their distribution of topics within each category. Question difficulty will depend on the skill level
-                of the participating teams. “Energy” questions will be in the style of modern NSB, featuring research
-                done at U.S. National Labs.<br><br>
+        <div class="section about-text" style=" margin-bottom: 15%;"> <!--margin-top: 45%;-->
+            <h1 id="faqs" class="scrollspy faq-text" style="padding: 10% 2% 2%;">FAQs</h1>
 
-                Proin nec odio a metus tincidunt laoreet id ut mi.
-                Vestibulum tincidunt enim sit amet enim sollicitudin fringilla.
-                Praesent ut magna sed augue sagittis cursus.<br><br>
-
-                Aliquam quis urna sed tortor bibendum interdum.
-                Nulla tempus velit eget est facilisis sagittis eu quis dui.
-                Aenean pharetra mi at bibendum sagittis.
-                Nulla sed libero ut mi convallis molestie at at turpis.<br><br>
-
-                Maecenas et turpis tristique, cursus sapien ultrices, eleifend mi.
-                Fusce dictum nisl venenatis lacus viverra, nec lacinia nibh vulputate.<br><br>
-
-                Integer et tellus sed magna condimentum faucibus.
-                Vivamus sit amet augue ut mi tempor pulvina<br><br>
-
+            <button class="faq--dropdown">Section 1</button>
+            <div class="custom-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
+
+            <button class="faq--dropdown">Section 2</button>
+            <div class="custom-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="faq--dropdown">Section 3</button>
+            <div class="custom-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
         </div>
-        <div id="anchor-point" style="height: 1px;"></div>
     </div>
 </div>
 
@@ -505,6 +496,21 @@
         scrollHandler();
     }
 
+
+    var acc = document.getElementsByClassName("faq--dropdown");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
 
 </script>
 
