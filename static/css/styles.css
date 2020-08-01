@@ -4,8 +4,6 @@
     margin-left: 0px;
 }
 
-@media only screen and (max-width: 600px) {
-}
 
 * {
     margin: 0px;
@@ -218,7 +216,7 @@ nav.white {
 }
 
 #theFixed {
-    transition: 1s ease;
+    transition: .3s ease-out;
 }
 
 .team-card-size {
@@ -238,7 +236,7 @@ nav.white {
     font-size: 0.9em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .team-card-size {
         min-height: 220px !important;
         margin-right: 10px !important;
@@ -580,8 +578,6 @@ nav.white {
     .logo-div {
         position: relative;
         width: 100%;
-        margin-left: 25%;
-        margin-bottom: 25px;
     }
 
     #theFixed {
@@ -637,8 +633,10 @@ nav.white {
     }
 
     .logo-img {
-        width: 90%;
-        margin-left: 2.5%;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        top: 0 !important;
     }
 
     .big-title-class {
@@ -835,7 +833,7 @@ nav.white {
     flex-direction: column
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .footer__inner {
         flex-direction: row
     }
@@ -846,7 +844,7 @@ nav.white {
     color: #fff
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .footer__textLogo {
         margin-bottom: 0
     }
@@ -912,7 +910,7 @@ nav.white {
     transition: 0.4s;
 }
 
-.active, .faq--dropdown:hover {
+.faq--active, .faq--dropdown:hover {
     background-color: #a8a8a8 !important;
 }
 
@@ -924,7 +922,7 @@ nav.white {
     margin-left: 5px;
 }
 
-.active:after {
+.faq--active:after {
     content: "\2212";
 }
 
