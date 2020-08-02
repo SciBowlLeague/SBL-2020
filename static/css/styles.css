@@ -41,11 +41,6 @@ nav.white {
     height: 55px;
 }
 
-.card-image {
-    width: 94%;
-    margin: auto;
-    padding: 5px 0;
-}
 
 /* Transition effects */
 .button {
@@ -937,4 +932,22 @@ nav.white {
     color: #747474;
     font-size: .66em;
     text-align: left !important;
+}
+
+.staff-card {
+    background: whitesmoke;
+    width: 300px;
+    height: 350px;
+    display: inline-block;
+    margin: 8px;
+}
+
+.card-image {
+    width: 94%;
+    margin: auto;
+    padding: 10px;
+}
+
+.card-image > img {
+    width: 100%;
 }
