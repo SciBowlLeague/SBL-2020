@@ -318,8 +318,7 @@ nav.white {
 }
 
 .big-title-class {
-    font-size: 5rem;
-    /**/
+    font-size: 5em;
 }
 
 .grid-child-2 {
@@ -635,7 +634,7 @@ nav.white {
     }
 
     .big-title-class {
-        font-size: 24px;
+        font-size: 2.5em;
     }
 
     .event-date {
@@ -694,9 +693,9 @@ nav.white {
         margin-bottom: 1%;
     }
 
-    .team-speaker-text {
+    /*.team-speaker-text {
         margin: 50% auto 10% auto;
-    }
+    }*/
 
     .team-container {
         margin-top: 75%;
