@@ -31,6 +31,10 @@ ul li a {
     font-size: 1.25em;
 }
 
+ul > li {
+    line-height: 56px;
+}
+
 div.container {
     height: 45px;
     width: 100%;
@@ -148,15 +152,15 @@ nav.white {
 }*/
 
 .button.-regular:hover {
-    color: #d52d30;
+    color: #21bd67;
     background: none;
-    border: solid #d52d30 2px;
+    border: solid #21bd67 2px;
 }
 
 .button.-regular2:hover {
-    color: #d52d30;
+    color: #2687e4;
     background: none;
-    border: solid #d52d30 2px;
+    border: solid #2687e4 2px;
 }
 
 .pulsate {
@@ -300,17 +304,16 @@ nav.white {
 
 .event-date {
     margin: 10px 20px 10px 20px;
-    /**/
     font-size: 2rem;
     font-weight: 900;
 }
 
 .sci-green {
-    color: #0f6636;
+    color: #21bd67;
 }
 
 .sci-blue {
-    color: #004990;
+    color: #2687e4;
 }
 
 .sidenav {
@@ -388,7 +391,6 @@ nav.white {
 
 .sponsor-text {
     font-size: 4em;
-    /**/
     color: #070707;
     text-align: center;
     /* padding-left: 5%; */
@@ -399,7 +401,6 @@ nav.white {
 
 .about-text {
     font-size: 2em;
-    /**/
     color: #eeeeee;
     text-align: center;
     /* padding-left: 5%; */

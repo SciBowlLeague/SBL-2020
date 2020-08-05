@@ -155,10 +155,10 @@
 
                 </div>
                 <div class="event-date col s12 l9">
-                    <p>Registration opens <span class="sci-green">Aug. 17th</span></p>
+                    <p>Registration opens <span class="sci-green" style="margin-left: .4ex">Aug. 17th</span></p>
                 </div>
                 <div class="event-date col s12 l9">
-                    <p>Runs from <span class="sci-blue">Sep. 21st</span> - <span class="sci-blue"> Nov. 7th</span></p>
+                    <p>Runs from <span class="sci-blue" style="margin-left: .4ex">Sep. 21st</span> – <span class="sci-blue"> Nov. 7th</span></p>
                 </div>
             </div>
         </div>
@@ -195,7 +195,7 @@
 
 
         <div class="section about-text" style=" margin-bottom: 15%;"> <!--margin-top: 45%;-->
-            <h1 id="faqs" class="scrollspy faq-text" style="padding: 10% 2% 2%;">FAQs</h1>
+            <h1 id="faqs" class="scrollspy faq-text" style="padding: 10% 2% 5%;">FAQs</h1>
 
             <button class="faq--dropdown">Section 1</button>
             <div class="custom-panel">
@@ -438,16 +438,8 @@
     team_id = document.getElementById('team-text');
 
     $(function () {
-        $('.-regular').hover(function () {
-            $('#codeit').css('color', '#d52d30');
-        }, function () {
-            // on mouseout, reset the background colour
-            $('#codeit').css('color', 'white');
-        });
-    });
-    $(function () {
         $('#sponsor-btn').hover(function () {
-            $('#sponsor-text').css('color', '#d52d30');
+            $('#sponsor-text').css('color', '#21bd67');
         }, function () {
             // on mouseout, reset the background colour
             $('#sponsor-text').css('color', '#070707');
@@ -455,18 +447,10 @@
     });
     $(function () {
         $('#prospect-btn').hover(function () {
-            $('#sponsor-text').css('color', '#d52d30');
+            $('#sponsor-text').css('color', '#2687e4');
         }, function () {
             // on mouseout, reset the background colour
             $('#sponsor-text').css('color', '#070707');
-        });
-    });
-    $(function () {
-        $('#team-btn').hover(function () {
-            $('#team-text').css('color', '#d52d30');
-        }, function () {
-            // on mouseout, reset the background colour
-            $('#team-text').css('color', 'white');
         });
     });
 
