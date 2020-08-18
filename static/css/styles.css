@@ -215,7 +215,8 @@ nav.white {
 }
 
 #theFixed {
-    transition: .3s ease-out;
+    transition: .1s ease-out !important;
+    position: fixed;
 }
 
 .team-card-size {
@@ -283,10 +284,6 @@ nav.white {
     /* height: 100%; */
     /* overflow-y: scroll; */
     /* overflow-x: hidden; */
-}
-
-#theFixed {
-    position: fixed;
 }
 
 #discord-join {
