@@ -227,13 +227,13 @@ nav.white {
 }
 
 .names {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 .designation {
     color: #070707;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 @media only screen and (max-width: 800px) {
@@ -319,6 +319,8 @@ nav.white {
 
 .big-title-class {
     font-size: 5em;
+    text-align: center;
+    margin: auto;
 }
 
 .grid-child-2 {
@@ -935,9 +937,21 @@ nav.white {
 .staff-card {
     background: whitesmoke;
     width: 300px;
-    height: 350px;
+    height: 100%;
     display: inline-block;
-    margin: 8px;
+    margin: 10px;
+    padding-bottom: 4px;
+    /*border-radius: 10px;*/
+}
+p.discord-id {
+    font-style: italic;
+    padding-top: 4px;
+    color: #262626;
+}
+
+div.card-image > img {
+    /*border-radius: 10px;*/
+    padding: 3px;
 }
 
 .card-image {
